@@ -1,0 +1,8 @@
+name: WES_data
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.12
+  - biopython=1.85
