@@ -2,7 +2,8 @@ name: WES_data
 channels:
   - conda-forge
   - bioconda
-  - nodefaults
+  - defaults
 dependencies:
   - python=3.12
-  - biopython=1.85
+  - snakemake=9.11.1
+  - pandas=2.3.2
