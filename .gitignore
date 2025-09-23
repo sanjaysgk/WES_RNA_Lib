@@ -11,3 +11,4 @@ workflow/notebooks/.ipynb_checkpoints/**
 **/.RData
 **/Rplots.pdf
 **conda3**
+miniconda.shminiconda.sh
