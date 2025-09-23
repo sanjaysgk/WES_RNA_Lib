@@ -6,3 +6,37 @@ get_genome:
 simulate_reads:
   read_length: 100
   read_number: 10000
+
+ref:
+  # ensembl species name
+  species: homo_sapiens
+  # ensembl release
+  release: 98
+  # genome build
+  build: GRCh38
+  
+sample_id: TCRBOA7
+
+base_dir: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/WES/
+
+references:
+  genome_fa: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/reference/chr7_hg38/GRCh38.d1.vd1.chr7.mini.fa
+  dbsnp: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/reference/dbsnp_146.hg38.chr7.mini.vcf.gz
+  mills: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/reference/mills.1000G_gold_standard_indels.hg38.vcf.gz
+  indels: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/reference/mills.indels.hg38.vcf.gz
+  small_exon: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/reference/small_exon.vcf.gz
+  pon: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/reference/1000g_pon.hg38.vcf
+  germline: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/reference/af-only-gnomad.hg38.chr7.mini.vcf.gz
+
+data:
+  wes_dir: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/data/tcrb/fastq/
+  output_dir: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test_data/WES/results/test_sample/
+
+fastq:
+  tumor_r1: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/data/tcrb/fastq/TCRBOA7-T-WEX.read1.250000.fastq.gz
+  tumor_r2: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/data/tcrb/fastq/TCRBOA7-T-WEX.read2.250000.fastq.gz
+  normal_r1: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/data/tcrb/fastq/TCRBOA7-N-WEX.read1.250000.fastq.gz
+  normal_r2: /home/sson0030/xy86_scratch2/SANJAY/Organoid/WES_RNA_Pipeline/test-datasets/data/tcrb/fastq/TCRBOA7-N-WEX.read2.250000.fastq.gz
+
+threads: 8
+memory: 19G

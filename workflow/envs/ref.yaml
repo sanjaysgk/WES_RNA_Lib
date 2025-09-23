@@ -1,0 +1,10 @@
+name: ref
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - samtools=1.16   # use 1.16 instead of 1.17
+  - gatk
+  - bwa-mem2
+  - python=3.10     # match your Snakemake/python version
